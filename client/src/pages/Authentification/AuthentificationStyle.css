@@ -1,0 +1,197 @@
+.authPageBody{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+.loginContainer{
+    margin-top: 4.5em;
+    margin-bottom: 4.5em;
+    display: flex;
+    flex-direction: row;
+    background-color: #f1f1f1;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156,156,156);
+    height:35em;
+    width: 45em;
+    position: relative;
+}
+
+.signUpContainer{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    display:flex;
+    flex-direction: row;
+    background-color: #f1f1f1;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156,156,156);
+    height:40em;
+    width: 45em;
+    position: relative;
+}
+
+.authDecoration{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d2beb0;
+    border-radius: 1em;
+    height: 95%;
+    width:40%;
+    margin-left:2.5%;
+}
+
+.authDecoration h2{
+    color:#3a465c;
+    font-size: 30px;
+}
+
+.authForm{
+ display:flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: space-around;
+ height: 100%;
+ width: 70%;
+
+}
+
+.authComponent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    height:3em;
+    font-size:16px;
+    margin-bottom: 1em;
+    gap:1em;
+}
+
+.avatar{
+    height: 5em;
+    width: 5em;
+    background-color: lightgray;
+    border-radius: 3em;
+}
+
+.authComponent label{
+    width: 5em;
+    text-align: left;
+}
+
+.authComponent input{
+    border:1px solid #3a465c;
+    background-color: lightgrey;
+    height:2em;
+    width:15.5em;
+    border-radius: 0.25em;
+    padding:0.75em;
+    font-size:16px;
+}
+.passwordInput{
+    height:2em;
+    width: 15.5em;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.passwordInput #password,
+.passwordInput #confirmPassword{
+    border:1px solid #3a465c;
+    background-color: lightgrey;
+    height:100%;
+    width:100%;
+    border-radius: 0.25em;
+    padding-right: 2em;
+    padding-left: 0.75em;
+    font-size:16px;
+}
+
+.authComponent input:focus,
+.authComponent #password:focus,
+.authComponent #confirmPassword:focus{
+    outline-color: #bb9684;
+}
+
+.passwordInput i{
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    cursor: pointer;
+    transform: translateX(2px);
+}
+
+
+
+.submitBtn{
+    margin-top: 2em;
+    background-color: #3a465c;
+    color:#bb9684;
+    width:40%;
+    height:3em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    border:none;
+    font-size: 16px;
+}
+.submitBtn:hover{
+    color: #d2beb0;
+}
+
+.submitBtn:active{
+    transform: scale(0.95);
+}
+
+#err{
+    color:#3a465c;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 770px) {
+    .loginContainer{
+        min-width: 20em;
+        max-width: 25em;
+        width: 80%;
+    }
+    .signUpContainer{
+        min-width: 20em;
+        max-width: 25em;
+        width: 80%;
+    }
+    .authDecoration{
+        display: none;
+    }
+    .authForm{
+        width: 100%;
+    }
+
+    .authComponent{
+        flex-direction: column;
+        align-items:start;
+        height:3.5em;
+        width: 17em;
+        gap:0;
+    }
+    
+    .passwordInput{
+        width: 17em;
+    }
+
+    .authComponent input{
+        width:100%;
+    }
+
+    .authComponent label{
+        width: 10em;
+        margin-bottom: 0.3em;
+    }
+}

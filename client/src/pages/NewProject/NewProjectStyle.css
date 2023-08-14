@@ -1,0 +1,335 @@
+.newProjectPageBody{
+    height: 100%;
+    width:100%;
+    min-height:44em;
+    min-width:88em;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    position: absolute;
+}
+.menuContainer{
+    background-color: #3a465c;
+    color:#d2beb0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;   
+    min-width: 14em;
+    max-width: 14em;
+    position: relative;
+}
+
+.projectInfoContainer{
+    height:80%;
+    width:100%;
+    margin: 1em;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.slidesInfoContainer{
+    background-color: #d2beb0;
+    display:flex;
+    align-items:center;  
+    flex-direction: column;
+    height: 70%;
+    width: 90%;
+    border-radius: 0.25em;
+
+
+}
+.slidesChangeContainer{
+    display: flex;
+    justify-content: end;
+    border-radius: 0.25em;
+    width:90%;
+    height:1.5em;
+
+}
+.slidesPreviewContainer{
+    border-radius: 0.25em;
+    color:#3a465c;
+    display:flex;
+    align-items:center;  
+    flex-direction: column;
+    height: 95%;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+}
+.ql-snow .ql-size-small {
+    font-size: 12px;
+  }
+  
+  .ql-snow .ql-size-normal {
+    font-size: 14px;
+  }
+  
+  .ql-snow .ql-size-large {
+    font-size: 18px;
+  }
+  
+  .ql-snow .ql-size-huge {
+    font-size: 24px;
+  }
+ 
+  
+  
+  
+  
+  
+  
+
+
+.slidesPreviewContainer::-webkit-scrollbar-thumb {
+    border-bottom-right-radius: 0.25em;
+    background: #bb9684;
+  }
+
+  .slidesPreviewContainer::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .slidesPreviewContainer::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-bottom-right-radius: 0.25em;
+  }
+
+
+.slidesPreviewContainer li{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    list-style-type: none;
+    position: relative;
+    width:90%;
+    max-height:3.375em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projectInfoContainer input{
+    border:1px solid #3a465c;
+    background-color: #d2beb0;
+    height:2em;
+    width:90%;
+    border-radius: 0.25em;
+    padding:0.25em;
+    font-size:16px;
+    text-align: center;
+    color: #3a465c;
+}
+.projectInfoContainer input::placeholder{
+    color:#3a465c;
+    opacity:1;
+}
+.arrow{
+    cursor: pointer;
+    margin-right: 0.1em;
+}
+.arrow:active{
+    transform: scale(0.85);
+}
+.menuItem{
+    color:#bb9684;
+    width:90%;
+    cursor: pointer;
+    font-size: 16px;
+}
+.menuItem:hover{
+    color: #d2beb0;
+}
+
+.menuItem:active{
+    transform: scale(0.95);
+}
+
+
+
+.slidePreview{
+    background-color: #3a465c;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    background-color:white;
+    border-radius: 0.25em;
+    border: 1px solid #3a465c;
+    height:3.75em;
+    width: 6em;
+}
+.activeSlide{
+    border: 2px solid #3a465c;
+}
+.slidePreview1{
+    display: flex;
+    border-radius: 0.05em;
+    width:6.1em;
+    height:3.45em;
+    box-shadow: 0 0.188em 1.550em rgb(156,156,156);
+    overflow: hidden;
+}
+
+.slidePreview1:active{
+    transform: scale(0.95);
+}
+
+.slideDeleteBtn{
+    border: 1px solid black;
+    width:1.6em;
+    height: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25em;
+    background-color: #d2beb0;
+    text-align: center;
+    font-weight: bold;
+}
+.slideDeleteBtn:hover{
+    background-color: #f1f1f1;
+}
+
+.slideDeleteBtn:active{
+    transform: scale(0.95);
+}
+
+.workPlaceContainer{
+    background-color:#f1f1f1;
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 3.5em;
+}
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: static;
+    background-color: #3a465c;
+    height:3em;
+    width: 100%;
+  }
+.insertFrameContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:22em;
+    gap:1em;
+    height: 100%;
+}
+.verticalDevider{
+    margin-left: 2em;
+    height:100%;
+    width: 0.08em;
+    background-color: #bb9684;
+}
+
+.editTextContainer{
+    width:23em;
+    gap:1em;
+    height: 100%;
+    color:#bb9684;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin-left: 2em;
+}
+
+select{
+    background-color: #bb9684;
+    color: #3a465c;
+    border-radius: 0.25em;
+    font-size: 16px;
+    height: 1.7em;
+}
+.inputColor{
+    background-color: #bb9684;
+    width:2.1em;
+    height:2em;
+    border-radius: 0.25em;
+    border:none;
+}
+
+.alignStyleContainer{
+    display: flex;
+    gap: 0.4em;
+}
+.textStyleContainer{
+    display: flex;
+    gap: 0.4em;
+}
+
+
+.editTextBtn{
+    background-color: #bb9684;
+    border-radius: 0.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.7em;
+    height: 1.7em;
+}
+
+.editTextBtn:active{
+    transform: scale(0.95);
+}
+
+.slide{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height:33.75em;
+    border-radius: 0.5em;
+    width:60em;
+    box-shadow: 0 0.188em 1.550em rgb(156,156,156);
+}
+
+
+.frameImg{
+    border:none;
+    position: absolute;
+    border-radius: 0.25em;
+}
+
+.ql-container{
+    border-radius: 0.5em;
+    width: 100%;
+    height: 100%;
+    margin: 0.5em;
+    border: none !important;
+}
+
+.activeFrame{
+    border: 1px solid #3a465c !important;
+}
+.addFrameBtn{
+    background-color: #d2beb0;
+    border:2px solid black;
+    border-radius: 1.75em;
+    align-items: center;
+    text-align: center;
+    width: 3.3em;
+    height: 3.3em;
+}
+.addFrameBtn:hover{
+    background-color: #f1f1f1;
+}
+#errProject{
+    color:#bb9684;
+    font-weight: bold;
+}
+
+.addFrameBtn:active{
+    transform: scale(0.95);
+}
+

@@ -1,0 +1,66 @@
+.container ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    padding: 3% 10%;
+    gap:3em;
+}
+
+.container h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+.container h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: #3a465c;
+}
+
+#newProject{
+    margin-top: 2em;
+}
+.callToActionBtn{
+    background-color: #3a465c;
+    color:#bb9684;
+    width:10em;
+    height:3em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    border:none;
+    font-size: 16px;
+}
+.callToActionBtn:hover{
+    color: #d2beb0;
+}
+
+.callToActionBtn:active{
+    transform: scale(0.95);
+}
+
+@media screen and (max-width: 770px){
+    .callToActionBtn{
+        margin-top: 2em;
+    }
+
+    .container h1{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    .container h2{
+        font-size: 18px;
+        font-weight: 600;
+        color: #3a465c;
+    }
+    .container ul{
+        flex-direction: column;
+        padding-top: 2em;
+        padding-left: 4%;
+        padding-right: 4%;
+        text-align: center;
+        gap:2em;
+    }
+
+}

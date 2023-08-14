@@ -1,0 +1,81 @@
+
+body.activePopUp {
+    overflow-y: hidden;
+}
+
+.popUp{
+    border-radius: 1em;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: rgba(49,49,49,0.8);
+}
+
+.popUpContent {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 1em 2em;
+    border-radius: 1em;
+    max-width: 40em;
+    min-width:30em;
+    min-height: 25em;
+    max-height: 40em;
+}
+
+.closePopUpBtn {
+    border-radius: 0.25em;
+    cursor: pointer;
+    border:1px solid black;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.closePopUpBtn:hover{
+    background-color: #d2beb0;
+}
+
+.closePopUpBtn:active{
+    transform: scale(0.95);
+}
+
+hr{
+    background: #e4e4e4;
+    height: 1.5px;
+    border: none;
+    width: 96%;
+}
+
+.popUpSubmitBtn{
+    margin-top: 2em;
+    background-color: #3a465c;
+    color:#bb9684;
+    width:25%;
+    height:2.5em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    border:none;
+    font-size: 16px;
+}
+.popUpSubmitBtn:hover{
+    color: #d2beb0;
+}
+
+.popUpSubmitBtn:active{
+    transform: scale(0.95);
+}

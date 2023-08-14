@@ -1,0 +1,204 @@
+  .myAccContainer{
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    display: flex;
+    background-color: #f1f1f1;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgb(156,156,156);
+    height: 35em;
+    width: 60%;
+    max-width: 60em;
+    min-width: 50em;
+  }
+
+.myAccDecoration{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d2beb0;
+    border-bottom-left-radius: 1em;
+    border-top-left-radius: 1em;
+    height: 95%;
+    width:25%;
+    margin-left:1.75%;
+}
+
+.myAccDecoration h2{
+    color:#3a465c;
+    font-size: 42px;
+}
+
+.myAccDesktopMenuContainer,
+.myAccMobileMenuContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom-right-radius: 1em;
+    border-top-right-radius: 1em;
+    background-color: #d2beb0;
+    position:inherit;
+    height: 95%;
+}
+
+
+.myAccDesktopMenuContainer{
+    width: 15%;
+    min-width: 6em;
+}
+.myAccMobileMenuContainer{
+    display: none;
+}
+
+.myAccMenuItem{
+    background-color: inherit;
+    color:#3a465c;
+    width:90%;
+    height: 3em;
+    border-radius: 0.25em;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border:solid 2px #3a465c;
+    font-size: 16px;
+    font-weight: bold;
+}
+.myAccMenuItem:hover{
+    color: #d2beb0;
+    background-color: #3a465c;
+}
+
+.myAccMenuItem:active{
+    transform: scale(0.95);
+}
+
+.myAccContent{
+    width:60%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.myAccContent p{
+    width:90%;
+    display:flex;
+    color:#3a465c;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.blanckContainer{
+    height:40%;
+}
+
+.myAccFormComponent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+    height:3em;
+    font-size:16px;
+    margin-bottom: 1em;
+    gap:1em;
+}
+
+.myAccFormComponent label{
+    width: 5em;
+    text-align: left;
+}
+
+.myAccFormComponent input{
+    border:1px solid #3a465c;
+    background-color: lightgrey;
+    height:2em;
+    width:15.5em;
+    border-radius: 0.25em;
+    padding:0.75em;
+    font-size:16px;
+}
+
+.passwordInput{
+    height:2em;
+    width: 15.5em;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.passwordInput #password{
+    border:1px solid #3a465c;
+    background-color: lightgrey;
+    height:100%;
+    width:100%;
+    border-radius: 0.25em;
+    padding-right: 2em;
+    padding-left: 0.75em;
+    font-size:16px;
+}
+.myAccFormComponent input:focus{
+    outline-color: #bb9684;
+}
+
+
+.myAccFormComponent input::placeholder{
+    color:black;
+}
+
+@media screen and (max-width: 1100px){
+    .myAccContainer{
+        width:77%;
+        min-width: 46em;
+    }
+  }
+@media screen and (max-width: 770px){
+    .myAccContainer{
+        min-width: 20em;
+        width: 88%;
+    }
+    .myAccContent{
+        width:85%;
+    }
+    .myAccContent form{
+        width:75%;
+        max-width: 18em;
+    }
+    .myAccDesktopMenuContainer{
+       display: none;
+    }
+    .myAccMobileMenuContainer{
+        display: flex;
+        border-bottom-left-radius: 1em;
+        border-top-left-radius: 1em;
+        width:15%;
+        height:100%;
+    }
+    .myAccMenuItem{
+        width:85%;
+        max-width: 4.5em;
+        font-size: 14px;
+        height: 2.5em;
+    }
+    .myAccDecoration{
+        display: none;
+    }
+
+    .myAccFormComponent{
+        flex-direction: column;
+        align-items:start;
+        height:3.5em;
+        gap:0;
+    }
+    .myAccFormComponent input,.passwordInput{
+        width: 100%;
+    }
+    .myAccFormComponent label{
+        width:100%;
+        margin-bottom: 0.3em;
+    }
+}

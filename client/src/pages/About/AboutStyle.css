@@ -1,0 +1,9 @@
+.infoContainer{
+    text-align: left;
+
+    margin: 2em 10%;
+}
+
+.infoContainer p{
+    margin-top: 1em;
+}
